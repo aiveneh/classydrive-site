@@ -20,12 +20,3 @@ export default function NotFound() {
     </div>
   );
 }
-
-export async function getServerSideProps() {
-  return {
-    props: {
-      title: 'ClassyDrive - ',
-      description: '',
-    },
-  };
-}
