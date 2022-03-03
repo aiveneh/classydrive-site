@@ -1,0 +1,18 @@
+{
+  "verbose": false,
+  "ignore": [
+    "*.test.js",
+    "fixtures/*",
+    "public",
+    "react",
+    "server",
+    "logs",
+    "src"
+  ],
+  "execMap": {
+    "handlebars": "hbs",
+    "rb": "ruby",
+    "pde": "processing --sketch={{pwd}} --run"
+  },
+  "ext": "js, json, hbs"
+}
