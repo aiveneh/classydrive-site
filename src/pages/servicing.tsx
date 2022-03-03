@@ -40,7 +40,7 @@ export default function CarServicing() {
             <div className="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
               <div className="section-title text-center">
                 <h2>Car Servicing Plans</h2>
-                <p>Why R7 is the best way to service your car</p>
+                <p>Why ClassyDrive is the best way to service your car</p>
               </div>
             </div>
           </div>

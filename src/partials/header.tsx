@@ -39,7 +39,7 @@ export default function Header() {
         <div className="container">
           <div className="navbar-header">
             <a className="navbar-brand" href="/">
-              <img src="/images/r7logo.jpg" alt="classydrive Logo" style={{ height: '30px' }} />
+              <img src="/images/classydrivelogo.jpg" alt="classydrive Logo" style={{ height: '30px' }} />
             </a>
           </div>
 

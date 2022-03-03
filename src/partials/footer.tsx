@@ -35,7 +35,7 @@ export default function Footer() {
             <div className="col-xs-12 col-sm-12 col-md-3 mb-30-sm">
               <div className="footer-logo">
                 <a href={routes.home.path}>
-                  <strong className="text-primary">R7</strong>AUTO
+                  <strong className="text-primary">Classy</strong>Drive
                 </a>
               </div>
 

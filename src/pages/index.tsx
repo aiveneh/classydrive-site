@@ -96,7 +96,7 @@ export default function Home() {
           <div className="row">
             <div className="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
               <div className="section-title text-center">
-                <h2>Latest Auction Cars</h2>
+                <h2>Latest Cars</h2>
                 <p>One sportsman tolerably him extensive put she immediate.</p>
               </div>
             </div>

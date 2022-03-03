@@ -188,7 +188,7 @@ export default function CarSection() {
           </div>
 
           <div className="col-xs-12 col-sm-4">
-            <h2 className="section-title">Latest R7 Reviews</h2>
+            <h2 className="section-title">Latest ClassyDrive Reviews</h2>
             <div className="car-review-list-wrapper">
               <div className="car-review-list-item">
                 <a href="#">
