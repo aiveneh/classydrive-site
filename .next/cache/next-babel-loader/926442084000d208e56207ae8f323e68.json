@@ -1,1 +1,0 @@
-{"ast":null,"code":"/* eslint-disable no-undef */\nvar CDN = '';\nvar isProd = true;\nvar basePath = isProd ? CDN : '';\nmodule.exports = {\n  CDN: CDN,\n  isProd: isProd,\n  basePath: basePath\n};","map":null,"metadata":{},"sourceType":"script"}

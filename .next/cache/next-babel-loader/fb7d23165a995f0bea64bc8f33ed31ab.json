@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport { Footer, Header } from '../partials';\nexport default function MainLayout(_ref) {\n  var children = _ref.children;\n  return __jsx(\"div\", {\n    className: \"container-wrapper\"\n  }, __jsx(Header, null), children, __jsx(Footer, null));\n}","map":null,"metadata":{},"sourceType":"module"}
