@@ -39,7 +39,7 @@
     "react-redux": "^7.1.3",
     "redux-devtools-extension": "^2.13.8",
     "rxjs": "^6.5.4",
-    "storejars-react-toolkit": "^1.2.2",
+    "storejars-react-toolkit": "^1.0.35",
     "yup": "^0.27.0"
   },
   "devDependencies": {
