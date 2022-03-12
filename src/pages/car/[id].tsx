@@ -86,7 +86,7 @@ export default function CarDetail() {
                           </li>
                         </ul>
                         <a data-toggle="modal" href="#enquiryModal" className="btn btn-info pull-right pull-left-xss">
-                          Enquire Now
+                          Rent Now
                         </a>
                       </div>
 

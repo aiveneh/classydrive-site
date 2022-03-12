@@ -41,6 +41,8 @@ export default function EnquiryModal(props: IProps) {
     email: Yup.string().email().required(),
     phone: Yup.string().required(),
     name: Yup.string().required(),
+    startDate: Yup.string().required('Start date is required'),
+    endDate: Yup.string().required('End date is required'),
   });
 
   return (
@@ -53,7 +55,7 @@ export default function EnquiryModal(props: IProps) {
       style={{ display: 'none', marginTop: '0px' }}
     >
       <Formik
-        initialValues={{ name: '', phone: '', email: '', message: '', type, itemId }}
+        initialValues={{ name: '', phone: '', email: '', message: '', startDate: '', endDate: '', type, itemId }}
         validationSchema={schema}
         onSubmit={(values) => {
           dispatch(action.createAction({}).reset);
@@ -159,6 +161,38 @@ export default function EnquiryModal(props: IProps) {
                         value={values.email}
                       />
                       <ErrorLabel message={errorParser(errors, touched, 'email')} />
+                    </div>
+                  </div>
+
+                  <div className="form-group row gap-15">
+                    <label htmlFor="inputEmail3" className="col-sm-4 control-label">
+                      Start Date:
+                    </label>
+                    <div className="col-sm-8">
+                      <input
+                        type="date"
+                        className="form-control mb-0"
+                        name="startDate"
+                        onChange={handleChange}
+                        value={values.startDate}
+                      />
+                      <ErrorLabel message={errorParser(errors, touched, 'startDate')} />
+                    </div>
+                  </div>
+
+                  <div className="form-group row gap-15">
+                    <label htmlFor="inputEmail3" className="col-sm-4 control-label">
+                      End Date:
+                    </label>
+                    <div className="col-sm-8">
+                      <input
+                        type="date"
+                        className="form-control mb-0"
+                        name="endDate"
+                        onChange={handleChange}
+                        value={values.endDate}
+                      />
+                      <ErrorLabel message={errorParser(errors, touched, 'endDate')} />
                     </div>
                   </div>
 
