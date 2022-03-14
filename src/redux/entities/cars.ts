@@ -26,7 +26,7 @@ export const reducer = handleActions(
         return draft;
       }),
   },
-  { data: [], item: { exteriorImages: [], interiorImages: [], pros: [], cons: [], features: [] }, similarCars: [] },
+  { data: [], item: { images: [] }, similarCars: [] },
 );
 
 export const metaReducer = metas(action);
@@ -59,32 +59,4 @@ function readOneEpic(action$) {
   );
 }
 
-function createEpic(action$) {
-  return action$.pipe(
-    ofType(action.create.loading),
-    switchMap(({ payload }) => {
-      return api.multipartPost$('/cars', payload).pipe(
-        switchMap(({ response }) => {
-          return of(action.createAction(response.data).success);
-        }),
-        catchError(({ response }) => of(action.createAction(responder(response)).error)),
-      );
-    }),
-  );
-}
-
-function updateEpic(action$) {
-  return action$.pipe(
-    ofType(action.update.loading),
-    switchMap(({ payload }) => {
-      return api.patch$(`/cars/${payload._id}`, payload).pipe(
-        switchMap(({ response }) => {
-          return of(action.updateAction(response.data).success);
-        }),
-        catchError(({ response }) => of(action.updateAction(responder(response)).error)),
-      );
-    }),
-  );
-}
-
-export const epic = combineEpics(readEpic, readOneEpic, createEpic, updateEpic);
+export const epic = combineEpics(readEpic, readOneEpic);

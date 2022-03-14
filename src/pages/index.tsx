@@ -110,10 +110,10 @@ export default function Home() {
                     <div className="car-item-02">
                       <a href={carLink(item)}>
                         <div className="image">
-                          <img className="home-page-image-thumbnail" src={item.exteriorImages[0]} alt="Car" />
+                          <img className="home-page-image-thumbnail" src={item.images[0]} alt="Car" />
                         </div>
 
-                        <small style={{ color: 'red' }}>{item.sold && <strong>SOLD</strong>}</small>
+                        <small style={{ color: 'red' }}>{item.available && <strong>Available</strong>}</small>
                         <div className="content pt20">
                           <h5>
                             {item.year} {item.make} {item.model}

@@ -1,7 +1,7 @@
 import { CDN, isProd, basePath } from '../app.config';
 
 export default {
-  BASE_URL: process.env.NEXT_PUBLIC_GATEWAY_URL + '/v1',
+  BASE_URL: process.env.NEXT_PUBLIC_GATEWAY_URL,
   DEFAULT_PP: '/img/user.png',
   LOCAL_STORAGE_KEY: '_re7fe&feAr',
   TOKEN_STORAGE_KEY: '_rfwew',

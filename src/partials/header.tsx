@@ -39,21 +39,12 @@ export default function Header() {
         <div className="container">
           <div className="navbar-header">
             <a className="navbar-brand" href="/">
-              <img src="/images/classydrivelogo.jpg" alt="classydrive Logo" style={{ height: '30px' }} />
+              Home
+              {/* <img src="/images/classydrivelogo.jpg" alt="classydrive Logo" style={{ height: '30px' }} /> */}
             </a>
           </div>
 
           <div id="navbar" className="collapse navbar-collapse navbar-arrow pull-left">
-            <div id="search-container">
-              <form id="search-form" name="search-form" method="get" action="#">
-                <fieldset>
-                  <input type="search" name="search" placeholder="Enter your keyword here and then press enter..." />
-                </fieldset>
-              </form>
-            </div>
-
-            <a className="search-button" href="#"></a>
-
             <ul className="nav navbar-nav" id="responsive-menu">
               <li>
                 <a href={routes.cars.path}>Cars</a>

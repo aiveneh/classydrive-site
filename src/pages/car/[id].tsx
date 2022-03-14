@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 import { selector, action } from '../../redux/entities/cars';
 import { formatPrice, getCarId } from '../../helpers';
-import SimilarCars from '../../partials/similarCars';
+// import SimilarCars from '../../partials/similarCars';
 import CarSidebar from '../../partials/carSidebar';
 import EnquiryModal from '../../partials/enquiryModal';
 
@@ -15,9 +15,8 @@ export default function CarDetail() {
   const { query } = router;
 
   useEffect(() => {
-    if (Object.keys(query.id).length > 0) {
+    if (Object.keys(query).length > 0) {
       const { id } = query;
-
       dispatch(action.readOneAction({ id: getCarId(id.toString()) }).loading);
     }
   }, [query]);
@@ -76,12 +75,7 @@ export default function CarDetail() {
                         <ul id="detailTab" className="tab-nav clearfix mb-10-xss">
                           <li className="active">
                             <a href="#detailTab1" data-toggle="tab">
-                              Exterior
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#detailTab2" data-toggle="tab">
-                              Interior
+                              Images
                             </a>
                           </li>
                         </ul>
@@ -95,7 +89,7 @@ export default function CarDetail() {
                           <div className="tab-content-inner">
                             <div className="slick-gallery-slideshow">
                               <div className="slider gallery-slideshow gallery-slideshow-not-tab">
-                                {car.exteriorImages.map((item) => (
+                                {car.images.map((item) => (
                                   <div key={item}>
                                     <div className="image">
                                       <img className="h-380" src={item} alt={car.model} />
@@ -105,7 +99,7 @@ export default function CarDetail() {
                               </div>
 
                               <div className="slider gallery-nav gallery-nav-not-tab">
-                                {car.exteriorImages.map((item) => (
+                                {car.images.map((item) => (
                                   <div key={item}>
                                     <div className="image">
                                       <img src={item} alt={car.model} />
@@ -121,7 +115,7 @@ export default function CarDetail() {
                           <div className="tab-content-inner">
                             <div className="slick-gallery-slideshow">
                               <div className="slider gallery-slideshow gallery-slideshow-tab-01">
-                                {car.interiorImages.map((item) => (
+                                {car.images.map((item) => (
                                   <div className="image" key={item}>
                                     <img className="h-380" src={item} alt={car.model} />
                                   </div>
@@ -129,7 +123,7 @@ export default function CarDetail() {
                               </div>
 
                               <div className="slider gallery-nav gallery-nav-tab-01">
-                                {car.interiorImages.map((item) => (
+                                {car.images.map((item) => (
                                   <div className="image" key={item}>
                                     <img src={item} alt={car.model} />
                                   </div>
@@ -210,60 +204,15 @@ export default function CarDetail() {
                 <div className="mb-30"></div>
                 <div className="clear"></div>
 
-                <div className="pro-con-wrapper">
-                  <div className="GridLex-gap-30 mb-0">
-                    <div className="GridLex-grid-noGutter-equalHeight">
-                      <div className="GridLex-col-6_sm-6_xs-12">
-                        <div className="pro-box">
-                          <h4 className="text-success">Pros</h4>
-                          <ul className="list-with-icon">
-                            {car.pros.map((item) => (
-                              <li key={item}>
-                                <i className="fa fa-plus-circle text-success"></i>
-                                {item}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="GridLex-col-6_sm-6_xs-12">
-                        <div className="con-box">
-                          <h4 className="text-warning">Cons</h4>
-                          <ul className="list-with-icon">
-                            {car.cons.map((item) => (
-                              <li key={item}>
-                                <i className="fa fa-minus-circle text-warning"></i>
-                                {item}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 <h3 className="section-title">Full Specification</h3>
                 <h4>{`${car.year} ${car.make} ${car.model}`}</h4>
                 <p>{car.description}.</p>
-
-                <h4>Car's Features</h4>
-
-                <ul className="list-with-icon">
-                  {car.features.map((item) => (
-                    <li key={item}>
-                      <i className="text-primary fa fa-check"></i>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
             <CarSidebar />
           </div>
 
-          <SimilarCars />
+          {/* <SimilarCars /> */}
 
           <div className="mb-70"></div>
         </div>
@@ -271,7 +220,7 @@ export default function CarDetail() {
 
       <EnquiryModal
         name={`${car.make} ${car.model} ${car.year}`}
-        image={car.exteriorImages[0]}
+        image={car.images[0]}
         description={car.description}
         price={car.price}
         itemId={car._id}
