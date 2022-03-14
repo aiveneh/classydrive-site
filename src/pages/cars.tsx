@@ -60,7 +60,7 @@ export default function Cars() {
                           </p>
 
                           <div className="image">
-                            <img src={item.exteriorImages[0]} alt="{item.model} {item.make} sale" />
+                            <img src={item.images[0]} alt="{item.model} {item.make} sale" />
                           </div>
 
                           <div className="content">

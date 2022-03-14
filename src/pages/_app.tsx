@@ -26,14 +26,14 @@ export default function App({ Component, pageProps }) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://storejars.com" />
+        <meta property="og:url" content="http://classydrivenigeria.com" />
         <meta property="og:image" content={getAsset('img/home_screenshot.png')} />
         <meta property="og:site_name" content="StoreJars" />
         <meta property="fb:app_id" content="1010365906114581" />
 
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
-        <meta property="twitter:url" content="https://storejars.com" />
+        <meta property="twitter:url" content="http://classydrivenigeria.com" />
         <meta property="twitter:image" content={getAsset('img/home_screenshot.png')} />
         <meta property="twitter:card" content={getAsset('img/home_screenshot.png')} />
         <meta name="twitter:site" content="@storejars" />

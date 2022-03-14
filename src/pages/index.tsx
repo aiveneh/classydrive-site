@@ -23,16 +23,12 @@ export default function Home() {
                 <div className="row">
                   <div className="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                     <div className="slick-hero-slider-caption">
-                      <h1 className="animation fromBottom transitionDelay2 transitionDuration4">Free Car Service</h1>
+                      <h1 className="animation fromBottom transitionDelay2 transitionDuration4">CAR DEALERSHIP</h1>
                       <p className="animation fromBottom transitionDelay4 transitionDuration6">
-                        Yet joy exquisite put sometimes enjoyment perpetual now. Behind lovers eat having length horses
-                        vanity say had its.
+                        Place an order for your dream car and we will get it to you
                       </p>
-                      <a
-                        href={routes.serviceRequest.path}
-                        className="animation fromBottom transitionDelay6 transitionDuration8"
-                      >
-                        <span className="bg-primary">Get Free Service</span>
+                      <a href={routes.cars.path} className="animation fromBottom transitionDelay6 transitionDuration8">
+                        <span className="bg-primary">Search for cars</span>
                       </a>
                     </div>
                   </div>
@@ -48,13 +44,16 @@ export default function Home() {
                   <div className="col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-6">
                     <div className="slick-hero-slider-caption text-left">
                       <h1 className="animation fromBottom transitionDelay2 transitionDuration4 text-left">
-                        Car Orders
+                        EARN WITH YOUR CAR
                       </h1>
                       <p className="animation fromBottom transitionDelay4 transitionDuration6 text-left">
-                        Place an Order for your dream car, get it shipped down to you.
+                        Register your car on our fleet and earn.
                       </p>
-                      <a href={routes.cars.path} className="animation fromBottom transitionDelay6 transitionDuration8">
-                        <span className="bg-primary">View cars</span>
+                      <a
+                        href={routes.register.path}
+                        className="animation fromBottom transitionDelay6 transitionDuration8"
+                      >
+                        <span className="bg-primary">Register Now</span>
                       </a>
                     </div>
                   </div>
@@ -70,17 +69,13 @@ export default function Home() {
                   <div className="col-sm-9 col-md-7">
                     <div className="slick-hero-slider-caption text-left">
                       <h1 className="animation fromBottom transitionDelay2 transitionDuration4 text-left">
-                        Home car services
+                        CAR RENTALS
                       </h1>
                       <p className="animation fromBottom transitionDelay4 transitionDuration6 text-left">
-                        But why smiling man her imagine married. Chiefly can man her out believe manners cottage colonel
-                        unknown.
+                        Unmatched car rental deals and offers just for you
                       </p>
-                      <a
-                        href={routes.serviceRequest.path}
-                        className="animation fromBottom transitionDelay6 transitionDuration6"
-                      >
-                        <span className="bg-primary">Get free service</span>
+                      <a href={routes.cars.path} className="animation fromBottom transitionDelay6 transitionDuration6">
+                        <span className="bg-primary">Rent a Car</span>
                       </a>
                     </div>
                   </div>
@@ -96,7 +91,7 @@ export default function Home() {
           <div className="row">
             <div className="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
               <div className="section-title text-center">
-                <h2>Latest Cars</h2>
+                <h2>Choose from our fleet of cars</h2>
                 <p>One sportsman tolerably him extensive put she immediate.</p>
               </div>
             </div>
@@ -139,7 +134,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-              <h4>Join our club</h4>
+              <h4>Join our community of car luxury entusiasts.</h4>
               <h2>To get our best offers, newsletter and much more</h2>
               <p className="mb-25">
                 Advantages entreaties mr he apartments do. Limits far yet turned highly repair parish talked six. Draw

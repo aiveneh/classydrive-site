@@ -27,8 +27,8 @@ export default function Header() {
 
               <div className="col-sm-6 clearfix hidden-xs">
                 <div className="top-header-widget pull-right">
-                  <a href={routes.serviceRequest.path}>
-                    <i className="fa fa-comments mr-3"></i> Get quote
+                  <a href="#">
+                    <i className="fa fa-comments mr-3"></i> Contact us
                   </a>
                 </div>
                 <div className="top-header-widget pull-right">
