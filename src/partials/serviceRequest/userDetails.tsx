@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import * as Yup from 'yup';
 import { errorParser, windowExists } from 'storejars-react-toolkit';
 
-import { metaSelector, action } from '../../redux/entities/serviceRequests';
+import { metaSelector, action } from '../../redux/entities/enquiries';
 import { Button, Banner, TextInput } from '../../components';
 import { routes } from '../../routes';
 
