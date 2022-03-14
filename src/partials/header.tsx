@@ -2,6 +2,7 @@ import React from 'react';
 
 import constants from '../constants';
 import { routes } from '../routes';
+import { isLoggedIn } from '../utils';
 
 export default function Header() {
   return (
@@ -13,9 +14,13 @@ export default function Header() {
               <div className="col-xs-12 col-sm-6 clearfix">
                 <div className="top-header-widget welcome">
                   <p>
-                    Welcome Guest |<a href={routes.login.path}>Sign In</a>
-                    or
-                    <a href={routes.register.path}>Register</a>
+                    {isLoggedIn() ? (
+                      'Welcome Guest'
+                    ) : (
+                      <span>
+                        <a href={routes.login.path}>Sign In</a> or <a href={routes.register.path}>Create Account</a>
+                      </span>
+                    )}
                   </p>
                 </div>
               </div>

@@ -3,14 +3,17 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { errorParser, windowExists } from 'storejars-react-toolkit';
+import { errorParser } from 'storejars-react-toolkit';
+import { useRouter } from 'next/router';
 
-import { metaSelector, action } from '../redux/entities/auth';
+import { metaSelector, action } from '../redux/entities/customers';
 import { TextInput, Banner, PasswordInput, Button } from '../components';
+import { routes } from '../routes';
 
 export default function Register() {
   const ioRequest = useSelector((state) => metaSelector(state).create);
   const dispatch = useDispatch();
+  const router = useRouter();
 
   const { success, error, loading } = ioRequest;
 
@@ -19,12 +22,12 @@ export default function Register() {
   if (success) {
     setTimeout(() => {
       // TODO, this shoudl be a cline socde redirect
-      windowExists.location.href = '';
+      router.push(routes.home.path);
     }, 3000);
   }
 
   const schema = Yup.object({
-    phone: Yup.string().min(3, 'Name should be more than 3 characters').required(),
+    telephone: Yup.string().min(3, 'Name should be more than 3 characters').required(),
     password: Yup.string().min(3, 'Name should be more than 3 characters').required(),
     email: Yup.string().required(),
     lastName: Yup.string().min(3, 'Last Name should be more than 3 characters').required(),
@@ -42,7 +45,7 @@ export default function Register() {
 
           <div className="content">
             <Formik
-              initialValues={{ firstName: '', lastName: '', email: '', password: '', phone: '' }}
+              initialValues={{ firstName: '', lastName: '', email: '', password: '', telephone: '' }}
               onSubmit={(values) => {
                 dispatch(action.createAction({}).reset);
                 dispatch(action.createAction(values).loading);
@@ -88,11 +91,11 @@ export default function Register() {
                     />
 
                     <TextInput
-                      name="phone"
+                      name="telephone"
                       placeholder="Phone"
-                      value={values.phone}
+                      value={values.telephone}
                       onChange={handleChange}
-                      error={errorParser(errors, touched, 'phone')}
+                      error={errorParser(errors, touched, 'telephone')}
                     />
 
                     <div className="mt-40">

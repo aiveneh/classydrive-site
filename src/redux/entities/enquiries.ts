@@ -26,25 +26,11 @@ export const reducer = handleActions(
 
 export const metaReducer = metas(action);
 
-function readEpic(action$) {
-  return action$.pipe(
-    ofType(action.read.loading),
-    switchMap(() => {
-      return api.get$('/enquiries').pipe(
-        switchMap(({ response }) => {
-          return of(action.readAction(response.data).success);
-        }),
-        catchError(({ response }) => of(action.readAction(responder(response)).error)),
-      );
-    }),
-  );
-}
-
 function createEpic(action$) {
   return action$.pipe(
     ofType(action.create.loading),
     switchMap(({ payload }) => {
-      return api.post$('/enquiries', payload).pipe(
+      return api.post$('/rent-requests', payload).pipe(
         switchMap(({ response }) => {
           return of(action.createAction(response.data).success);
         }),
@@ -54,4 +40,4 @@ function createEpic(action$) {
   );
 }
 
-export const epic = combineEpics(readEpic, createEpic);
+export const epic = combineEpics(createEpic);

@@ -7,22 +7,20 @@ import { TextInput, PasswordInput, Button } from '../components';
 
 interface IProps {
   isSubmitting: boolean;
-  type: string;
   handleSubmit: any;
 }
 
 export default function Login(props: IProps) {
-  const { isSubmitting, type, handleSubmit } = props;
+  const { isSubmitting, handleSubmit } = props;
 
   const schema = Yup.object({
     password: Yup.string().required(),
     email: Yup.string().email().required(),
-    type: Yup.string().required(),
   });
 
   return (
     <Formik
-      initialValues={{ email: '', password: '', type }}
+      initialValues={{ email: '', password: '' }}
       validationSchema={schema}
       onSubmit={(values) => handleSubmit(values)}
     >

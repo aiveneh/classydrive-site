@@ -26,29 +26,14 @@ export const reducer = handleActions(
 
 export const metaReducer = metas(action);
 
-// login a vendor, customer or admin creates a token
-function createEpic(action$) {
-  return action$.pipe(
-    ofType(action.create.loading),
-    switchMap(({ payload }) => {
-      return api.post$('/register', payload).pipe(
-        switchMap(({ response }) => {
-          tokenStorage.set(response.data);
-          return of(action.createAction(response.data).success);
-        }),
-        catchError(({ response }) => of(action.createAction(responder(response)).error)),
-      );
-    }),
-  );
-}
-
 function readEpic(action$) {
   return action$.pipe(
     ofType(action.read.loading),
     switchMap(({ payload }) => {
-      return api.post$('/login', payload).pipe(
+      return api.post$('/login/customer', payload).pipe(
         switchMap(({ response }) => {
-          tokenStorage.set(response.data);
+          const { expires, jwt } = response.data;
+          tokenStorage.set({ expires, token: jwt });
           return of(action.readAction(response.data).success);
         }),
         catchError(({ response }) => of(action.readAction(responder(response)).error)),
@@ -57,4 +42,4 @@ function readEpic(action$) {
   );
 }
 
-export const epic = combineEpics(readEpic, createEpic);
+export const epic = combineEpics(readEpic);

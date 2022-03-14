@@ -38,9 +38,6 @@ export default function EnquiryModal(props: IProps) {
 
   const schema = Yup.object({
     message: Yup.string().required(),
-    email: Yup.string().email().required(),
-    phone: Yup.string().required(),
-    name: Yup.string().required(),
     startDate: Yup.string().required('Start date is required'),
     endDate: Yup.string().required('End date is required'),
   });
@@ -55,7 +52,7 @@ export default function EnquiryModal(props: IProps) {
       style={{ display: 'none', marginTop: '0px' }}
     >
       <Formik
-        initialValues={{ name: '', phone: '', email: '', message: '', startDate: '', endDate: '', type, itemId }}
+        initialValues={{ message: '', startDate: '', endDate: '', type, itemId }}
         validationSchema={schema}
         onSubmit={(values) => {
           dispatch(action.createAction({}).reset);
@@ -120,50 +117,6 @@ export default function EnquiryModal(props: IProps) {
                 <p>{description}</p>
 
                 <div className="form-horizontal">
-                  <div className="form-group row gap-15">
-                    <label htmlFor="inputEmail1" className="col-sm-4 control-label">
-                      Name:
-                    </label>
-
-                    <div className="col-sm-8">
-                      <input
-                        type="text"
-                        className="form-control mb-0"
-                        name="name"
-                        onChange={handleChange}
-                        value={values.name}
-                      />
-                      <ErrorLabel message={errorParser(errors, touched, 'name')} />
-                    </div>
-                  </div>
-
-                  <div className="form-group row gap-15">
-                    <label htmlFor="inputEmail2" className="col-sm-4 control-label">
-                      Phone Number:
-                    </label>
-
-                    <div className="col-sm-8">
-                      <input className="form-control mb-0" name="phone" onChange={handleChange} value={values.phone} />
-                      <ErrorLabel message={errorParser(errors, touched, 'phone')} />
-                    </div>
-                  </div>
-
-                  <div className="form-group row gap-15">
-                    <label htmlFor="inputEmail3" className="col-sm-4 control-label">
-                      Email Address:
-                    </label>
-                    <div className="col-sm-8">
-                      <input
-                        type="email"
-                        className="form-control mb-0"
-                        name="email"
-                        onChange={handleChange}
-                        value={values.email}
-                      />
-                      <ErrorLabel message={errorParser(errors, touched, 'email')} />
-                    </div>
-                  </div>
-
                   <div className="form-group row gap-15">
                     <label htmlFor="inputEmail3" className="col-sm-4 control-label">
                       Start Date:

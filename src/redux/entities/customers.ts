@@ -8,10 +8,10 @@ import { Actions, entitiesMeta, entities, responder, metas } from 'storejars-rea
 import { api, tokenStorage } from '../helpers';
 import namespaces from '../namespaces';
 
-export const action = new Actions(namespaces.USERS);
+export const action = new Actions(namespaces.CUSTOMERS);
 
-export const selector = createSelector(entities, (state) => state.users);
-export const metaSelector = createSelector(entitiesMeta, (state) => state.users);
+export const selector = createSelector(entities, (state) => state.customers);
+export const metaSelector = createSelector(entitiesMeta, (state) => state.customers);
 
 export const reducer = handleActions(
   {
@@ -30,7 +30,7 @@ function createEpic(action$) {
   return action$.pipe(
     ofType(action.create.loading),
     switchMap(({ payload }) => {
-      return api.post$('/users', payload).pipe(
+      return api.post$('/customers', payload).pipe(
         switchMap(({ response }) => {
           tokenStorage.set(response.data);
           return of(action.createAction(response.data).success);
@@ -41,32 +41,4 @@ function createEpic(action$) {
   );
 }
 
-function readEpic(action$) {
-  return action$.pipe(
-    ofType(action.read.loading),
-    switchMap(() => {
-      return api.get$('/users').pipe(
-        switchMap(({ response }) => {
-          return of(action.readAction(response.data).success);
-        }),
-        catchError(({ response }) => of(action.readAction(responder(response)).error)),
-      );
-    }),
-  );
-}
-
-function deleteEpic(action$) {
-  return action$.pipe(
-    ofType(action.read.loading),
-    switchMap(({ payload }) => {
-      return api.post$('/users', payload).pipe(
-        switchMap(({ response }) => {
-          return of(action.readAction(response.data).success);
-        }),
-        catchError(({ response }) => of(action.readAction(responder(response)).error)),
-      );
-    }),
-  );
-}
-
-export const epic = combineEpics(readEpic, createEpic, deleteEpic);
+export const epic = combineEpics(createEpic);
