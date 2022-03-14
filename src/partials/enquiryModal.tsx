@@ -15,12 +15,11 @@ interface IProps {
   description: string;
   condition?: string;
   mileage?: string;
-  type: string;
   itemId: string;
 }
 
 export default function EnquiryModal(props: IProps) {
-  const { image, name, price, description, condition, mileage, type, itemId } = props;
+  const { image, name, price, description, condition, mileage, itemId } = props;
 
   const ioRequest = useSelector((state) => metaSelector(state).create);
   const dispatch = useDispatch();
@@ -40,6 +39,7 @@ export default function EnquiryModal(props: IProps) {
     message: Yup.string().required(),
     startDate: Yup.string().required('Start date is required'),
     endDate: Yup.string().required('End date is required'),
+    carId: Yup.string().required('Car is required'),
   });
 
   return (
@@ -52,8 +52,9 @@ export default function EnquiryModal(props: IProps) {
       style={{ display: 'none', marginTop: '0px' }}
     >
       <Formik
-        initialValues={{ message: '', startDate: '', endDate: '', type, itemId }}
+        initialValues={{ message: '', startDate: '', endDate: '', carId: itemId }}
         validationSchema={schema}
+        enableReinitialize={true}
         onSubmit={(values) => {
           dispatch(action.createAction({}).reset);
           dispatch(action.createAction(values).loading);
@@ -65,7 +66,12 @@ export default function EnquiryModal(props: IProps) {
           return (
             <form className="modal-container" onSubmit={handleSubmit}>
               {error && <Banner.Error message={error} reset={reset} />}
-              {success && <Banner.Success message="Enquiry sent successfully" reset={reset} />}
+              {success && (
+                <Banner.Success
+                  message="Request sent successfully, a member of our team woudl reach out to you"
+                  reset={reset}
+                />
+              )}
 
               <div className="modal-header">
                 <button type="button" className="close" data-dismiss="modal" aria-hidden="true">

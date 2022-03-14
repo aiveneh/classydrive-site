@@ -224,7 +224,6 @@ export default function CarDetail() {
         description={car.description}
         price={car.price}
         itemId={car._id}
-        type="car"
         condition={car.condition}
         mileage={car.mileage}
       />
