@@ -39,13 +39,7 @@ export default function Footer() {
                 </a>
               </div>
 
-              <p className="about-us-footer">
-                Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do
-                in. Went me rank at...
-                <a href="#" className="font-italic">
-                  read more
-                </a>
-              </p>
+              <p className="about-us-footer">Ultimate experience of driving in luxury, elegance &amp; class.</p>
 
               <div className="social-footer clearfix">
                 <a href={constants.facebook}>
@@ -74,7 +68,7 @@ export default function Footer() {
                   <a href={routes.faq.path}>FAQ</a>
                 </li>
                 <li>
-                  <a href="#">Press</a>
+                  <a href={routes.about.path}>About</a>
                 </li>
                 <li>
                   <a href={routes.contact.path}>Contact</a>

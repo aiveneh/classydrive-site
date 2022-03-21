@@ -130,7 +130,7 @@ export default function Home() {
 
       {/* TODO, Full text search comes here */}
 
-      <div className="promo-box">
+      {/* <div className="promo-box">
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
