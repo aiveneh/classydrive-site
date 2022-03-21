@@ -52,19 +52,17 @@ export default function Header() {
           <div id="navbar" className="collapse navbar-collapse navbar-arrow pull-left">
             <ul className="nav navbar-nav" id="responsive-menu">
               <li>
-                <a href={routes.cars.path}>Cars</a>
+                <a href={routes.cars.path}>Fleets</a>
               </li>
 
               <li>
-                <a href="#">About Us</a>
-                <ul>
-                  <li>
-                    <a href={routes.faq.path}>FAQ</a>
-                  </li>
-                  <li>
-                    <a href={routes.contact.path}>Contact</a>
-                  </li>
-                </ul>
+                <a href={routes.about.path}>About Us</a>
+              </li>
+              <li>
+                <a href={routes.faq.path}>FAQ</a>
+              </li>
+              <li>
+                <a href={routes.contact.path}>Contact</a>
               </li>
             </ul>
           </div>

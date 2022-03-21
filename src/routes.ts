@@ -36,7 +36,7 @@ export const routes = {
   contact: {
     path: '/contact',
   },
-  spareparts: {
-    path: '/contact',
+  about: {
+    path: '/about',
   },
 };
