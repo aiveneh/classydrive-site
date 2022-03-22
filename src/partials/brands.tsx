@@ -13,7 +13,7 @@ export default function Brands() {
                 <span className="image">
                   <img src="/images/car-brand/01.png" alt="/images" />
                 </span>{' '}
-                Brand One
+                Toyota
               </a>
             </li>
 
@@ -22,7 +22,7 @@ export default function Brands() {
                 <span className="image">
                   <img src="/images/car-brand/02.png" alt="/images" />
                 </span>{' '}
-                Maker Two
+                Honda
               </a>
             </li>
             <li>
@@ -30,7 +30,7 @@ export default function Brands() {
                 <span className="image">
                   <img src="/images/car-brand/03.png" alt="/images" />
                 </span>{' '}
-                Three Brand
+                Nissan
               </a>
             </li>
             <li>
@@ -38,7 +38,7 @@ export default function Brands() {
                 <span className="image">
                   <img src="/images/car-brand/04.png" alt="/images" />
                 </span>{' '}
-                Model Four
+                Mercedes Benz
               </a>
             </li>
           </ul>

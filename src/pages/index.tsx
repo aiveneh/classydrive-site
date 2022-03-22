@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selector, action } from '../redux/entities/cars';
 import { formatPrice, carLink } from '../helpers';
 import { routes } from '../routes';
+import { Brands } from '../partials';
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -92,7 +93,7 @@ export default function Home() {
             <div className="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
               <div className="section-title text-center">
                 <h2>Choose from our fleet of cars</h2>
-                <p>One sportsman tolerably him extensive put she immediate.</p>
+                {/* <p>One sportsman tolerably him extensive put she immediate.</p> */}
               </div>
             </div>
           </div>
@@ -127,6 +128,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Brands />
 
       <div className="section">
         <div className="container container-outer">
