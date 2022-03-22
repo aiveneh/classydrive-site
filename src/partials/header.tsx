@@ -66,6 +66,12 @@ export default function Header() {
               <li>
                 <a href={routes.contact.path}>Contact</a>
               </li>
+              <li>
+                <a href={routes.register.path}>Sign Up</a>
+              </li>
+              <li>
+                <a href={routes.login.path}>Login</a>
+              </li>
             </ul>
           </div>
         </div>

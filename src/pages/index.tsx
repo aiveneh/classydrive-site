@@ -99,7 +99,7 @@ export default function Home() {
 
           <div className="car-wrapper-02">
             <div className="GridLex-gap-30">
-              <div className="GridLex-grid-noGutter-equalHeight GridLex-grid-center">
+              <div className="GridLex-grid-noGutter-equalHeight">
                 {cars.map((item) => (
                   <div className="GridLex-col-3-_sm-4_xs-6_xss-12" key={item.make}>
                     <div className="car-item-02">
