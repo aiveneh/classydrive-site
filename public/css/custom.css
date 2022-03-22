@@ -152,9 +152,22 @@ input[type='file'] {
   }
 }
 
+.logo {
+  height: 60px;
+}
+
 @media only screen and (max-width: 500px) {
   .home-page-image-thumbnail {
     height: 300px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .flaticon {
+    max-width: 70%;
+    display: inline;
   }
 }
 

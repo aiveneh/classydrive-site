@@ -128,6 +128,57 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="section">
+        <div className="container container-outer">
+          <div className="row">
+            <div className="col-xss-12 col-xs-6 col-sm-12 col-md-12 mb-30-xss">
+              <div className="row mt-70 mb-50">
+                <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
+                  <img src="/icons/car-wash.png" className="p-50 flaticon" />
+                  <p className="w-600">CAR RENTAL</p>
+                  <p>
+                    Need to show up at a meeting in classy? Ride to your wedding in style and elegance? or you just want
+                    to have a feel of driving a luxury car? No matter the occasion, we have the luxury car that fits.
+                    Classy Drive Nigeria car rental services got you sorted. Here we believe that renting a luxury car
+                    should be quick, simple and exciting
+                  </p>
+                </div>
+
+                <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
+                  <img src="/icons/tire-pressure.png" className="p-50 flaticon" />
+                  <p className="w-600">CAR DEALERSHIP</p>
+                  <p>
+                    Here at Classy Drive Nigeria, we are on a mission to be the number one destination for luxury and
+                    exotic automotive needs. It doesn’t matter what your need is, whether SUV, Saloon or Sport cars, new
+                    or used, rest assured we will deliver it to you
+                  </p>
+                </div>
+
+                <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
+                  <img src="/icons/car.png" className="p-50 flaticon" />
+                  <p className="w-600">PREMIUM CAR FLEET</p>
+                  <p>
+                    We over you an opportunity to earn a passive income when you enroll your luxury car in our rental
+                    program. Whether you use your exotic car or leave it parked in your garage, remember your car
+                    depreciates with time so why not earn with anyway?
+                  </p>
+                </div>
+              </div>
+
+              <div className="row p-50  text-center">
+                <h3 className="heading mt-0">More Than Car Dealers</h3>
+
+                <p>
+                  We are offering you the ultimate experience of driving in luxury, elegance &amp; class. Whether you
+                  need to purchase a high-end car or you just need to rent one for a period, may you have a luxury car
+                  in your garage, you can put it on a fleet, and we will pay you every time a rental request is made for
+                  it
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* TODO, Full text search comes here */}
 
       {/* <div className="promo-box">

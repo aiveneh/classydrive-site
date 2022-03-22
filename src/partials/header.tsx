@@ -44,7 +44,7 @@ export default function Header() {
         <div className="container">
           <div className="navbar-header">
             <a className="navbar-brand" href="/">
-              <img src="/images/logo.jpeg" alt="classydrive Logo" style={{ height: '70px' }} />
+              <img src="/images/logo.jpeg" alt="classydrive Logo" className="logo" />
             </a>
           </div>
 
