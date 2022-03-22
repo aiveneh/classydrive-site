@@ -135,7 +135,9 @@ export default function Home() {
               <div className="row mt-70 mb-50">
                 <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
                   <img src="/icons/car-wash.png" className="p-50 flaticon" />
-                  <p className="w-600">CAR RENTAL</p>
+                  <a href={routes.cars.path}>
+                    <p className="w-600">CAR RENTAL</p>
+                  </a>
                   <p>
                     Need to show up at a meeting in classy? Ride to your wedding in style and elegance? or you just want
                     to have a feel of driving a luxury car? No matter the occasion, we have the luxury car that fits.
@@ -146,7 +148,9 @@ export default function Home() {
 
                 <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
                   <img src="/icons/tire-pressure.png" className="p-50 flaticon" />
-                  <p className="w-600">CAR DEALERSHIP</p>
+                  <a href={routes.cars.path}>
+                    <p className="w-600">CAR DEALERSHIP</p>
+                  </a>
                   <p>
                     Here at Classy Drive Nigeria, we are on a mission to be the number one destination for luxury and
                     exotic automotive needs. It doesn’t matter what your need is, whether SUV, Saloon or Sport cars, new
@@ -156,7 +160,10 @@ export default function Home() {
 
                 <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
                   <img src="/icons/car.png" className="p-50 flaticon" />
-                  <p className="w-600">PREMIUM CAR FLEET</p>
+                  <a href="http://partner.classydrivenigeria.com">
+                    <p className="w-600">PREMIUM CAR FLEET</p>
+                  </a>
+
                   <p>
                     We over you an opportunity to earn a passive income when you enroll your luxury car in our rental
                     program. Whether you use your exotic car or leave it parked in your garage, remember your car

@@ -156,6 +156,10 @@ input[type='file'] {
   height: 60px;
 }
 
+.w-600 {
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 500px) {
   .home-page-image-thumbnail {
     height: 300px;
