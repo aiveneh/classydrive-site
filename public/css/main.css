@@ -1397,7 +1397,6 @@ ul.list-col-3 li {
   -webkit-transition: margin 0.3s;
   -o-transition: margin 0.3s;
   transition: margin 0.3s;
-  padding-top: 56px;
 }
 
 .with-top-header .wrapper,

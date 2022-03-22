@@ -7,7 +7,7 @@ import { isLoggedIn } from '../utils';
 export default function Header() {
   return (
     <header id="header">
-      <nav className="navbar navbar-primary navbar-fixed-top navbar-sticky-function">
+      <nav className="navbar navbar-primary">
         <div id="top-header">
           <div className="container">
             <div className="row">
@@ -44,15 +44,17 @@ export default function Header() {
         <div className="container">
           <div className="navbar-header">
             <a className="navbar-brand" href="/">
-              Home
-              {/* <img src="/images/classydrivelogo.jpg" alt="classydrive Logo" style={{ height: '30px' }} /> */}
+              <img src="/images/logo.jpeg" alt="classydrive Logo" style={{ height: '70px' }} />
             </a>
           </div>
 
           <div id="navbar" className="collapse navbar-collapse navbar-arrow pull-left">
             <ul className="nav navbar-nav" id="responsive-menu">
               <li>
-                <a href={routes.cars.path}>Fleets</a>
+                <a href={routes.cars.path}>Rentals</a>
+              </li>
+              <li>
+                <a href="http://partner.classydrivenigeria.com">Fleets</a>
               </li>
 
               <li>

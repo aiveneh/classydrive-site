@@ -62,8 +62,6 @@
   -ms-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  padding-top: 20px;
-  padding-bottom: 50px;
   color: #555;
   margin-right: 25px;
 }
