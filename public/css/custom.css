@@ -138,6 +138,16 @@ input[type='file'] {
   font-size: 15px;
 }
 
+.flaticon {
+  max-width: 100%;
+  height: 200px;
+  display: inline;
+}
+
+.contact-item img {
+  margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 991px) {
   .p-50 {
     padding: 10px;
@@ -167,11 +177,6 @@ input[type='file'] {
 
   .logo {
     height: 40px;
-  }
-
-  .flaticon {
-    max-width: 70%;
-    display: inline;
   }
 }
 

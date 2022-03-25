@@ -43,6 +43,8 @@ export default function About() {
 
                     <div className="GridLex-col-12_sm-12_xs-12">
                       <div className="contact-item">
+                        <img src="/images/car-1.jpg" />
+
                         <p>
                           We are offering you the ultimate experience of driving in luxury, elegance &amp; class.
                           Whether you need to purchase a high-end car or you just need to rent one for a period, may you
@@ -59,6 +61,8 @@ export default function About() {
                           we believe that renting a luxury car should be quick, simple and exciting.
                         </p>
 
+                        <img src="/images/car-2.jpg" />
+
                         <p>
                           When it comes to luxury road travel, we put you first. Our luxury car rental service offers a
                           great way to enjoy intra and inter city travel in luxury. Whether you choose to drive yourself
@@ -73,11 +77,16 @@ export default function About() {
                           luxury and those who want to have a feel of luxurious travels.
                         </p>
 
+                        <img src="/images/car-3.jpg" />
+
                         <p>
                           <b>CAR DEALERSHIP</b> – Here at Classy Drive Nigeria, we are on a mission to be the number one
                           destination for luxury and exotic automotive needs. It doesn’t matter what your need is,
                           whether SUV, Saloon or Sport cars, new or used, rest assured we will deliver it to you.
                         </p>
+
+                        <img src="/images/car-4.jpg" />
+
                         <p>
                           <b>PREMIUM CAR FLEET</b> – We over you an opportunity to earn a passive income when you enroll
                           your luxury car in our rental program. Whether you use your exotic car or leave it parked in
