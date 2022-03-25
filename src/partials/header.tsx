@@ -54,7 +54,7 @@ export default function Header() {
                 <a href={routes.cars.path}>Rentals</a>
               </li>
               <li>
-                <a href="http://partner.classydrivenigeria.com">Fleets</a>
+                <a href="http://partner.classydrivenigeria.com">Partners</a>
               </li>
 
               <li>
