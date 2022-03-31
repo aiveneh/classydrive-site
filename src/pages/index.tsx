@@ -89,6 +89,60 @@ export default function Home() {
 
       <div className="section">
         <div className="container">
+          <div className="section-title text-center row p-50">
+            <h3 className="heading mt-0">ClassyDrive Nigeria Limited</h3>
+
+            <div className="aboutText">
+              <p>
+                Your global choice in automobile rentals and sales, fleet management and consulting, and private jet
+                hiring services. Driven by excellence and the passion to serve with a wealth of resources in man and
+                material at our disposal, we have earned our rightful place among our global community of clients.
+              </p>
+              <p>
+                We continually push the boundaries of innovations to deliver seamless, first-class services to business
+                and individual needs through our portfolio of services. People and the environment are at the center of
+                our values, and we daily commit to their overall good through the businesses we serve and the services
+                we render.
+              </p>
+            </div>
+          </div>
+
+          <div className="row mt-70 mb-50">
+            <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
+              <img src="/images/car-1.jpg" className="flaticon" />
+              <a href={routes.cars.path}>
+                <p className="w-600">CAR RENTAL</p>
+              </a>
+              <p>
+                Need to show up at a meeting in classy? Ride to your wedding in style and elegance? or you just want to
+                have a feel of driving a luxury car ... <a href={routes.about.path}>read more</a>
+              </p>
+            </div>
+
+            <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
+              <img src="/images/car-2.jpg" className="flaticon" />
+              <a href={routes.cars.path}>
+                <p className="w-600">CAR DEALERSHIP</p>
+              </a>
+              <p>
+                Here at Classy Drive Nigeria, we are on a mission to be the number one destination for luxury and exotic
+                automotive needs. <a href={routes.about.path}>read more</a>
+              </p>
+            </div>
+
+            <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
+              <img src="/images/car-4.jpg" className="flaticon" />
+              <a href="http://partner.classydrivenigeria.com">
+                <p className="w-600">PREMIUM CAR FLEET</p>
+              </a>
+
+              <p>
+                We over you an opportunity to earn a passive income when you enroll your luxury car in our rental
+                program. <a href={routes.about.path}>read more</a>
+              </p>
+            </div>
+          </div>
+
           <div className="row">
             <div className="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
               <div className="section-title text-center">
@@ -131,60 +185,6 @@ export default function Home() {
 
       <Brands />
 
-      <div className="section">
-        <div className="container container-outer">
-          <div className="row">
-            <div className="col-xss-12 col-xs-6 col-sm-12 col-md-12 mb-30-xss">
-              <div className="row mt-70 mb-50">
-                <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
-                  <img src="/images/car-1.jpg" className="flaticon" />
-                  <a href={routes.cars.path}>
-                    <p className="w-600">CAR RENTAL</p>
-                  </a>
-                  <p>
-                    Need to show up at a meeting in classy? Ride to your wedding in style and elegance? or you just want
-                    to have a feel of driving a luxury car ... <a href={routes.about.path}>read more</a>
-                  </p>
-                </div>
-
-                <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
-                  <img src="/images/car-2.jpg" className="flaticon" />
-                  <a href={routes.cars.path}>
-                    <p className="w-600">CAR DEALERSHIP</p>
-                  </a>
-                  <p>
-                    Here at Classy Drive Nigeria, we are on a mission to be the number one destination for luxury and
-                    exotic automotive needs. <a href={routes.about.path}>read more</a>
-                  </p>
-                </div>
-
-                <div className="col-md-4 col-xss-12 col-xs-12 text-center mb-20">
-                  <img src="/images/car-4.jpg" className="flaticon" />
-                  <a href="http://partner.classydrivenigeria.com">
-                    <p className="w-600">PREMIUM CAR FLEET</p>
-                  </a>
-
-                  <p>
-                    We over you an opportunity to earn a passive income when you enroll your luxury car in our rental
-                    program. <a href={routes.about.path}>read more</a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="row p-50  text-center">
-                <h3 className="heading mt-0">More Than Car Dealers</h3>
-
-                <p>
-                  We are offering you the ultimate experience of driving in luxury, elegance &amp; class. Whether you
-                  need to purchase a high-end car or you just need to rent one for a period, may you have a luxury car
-                  in your garage, you can put it on a fleet, and we will pay you every time a rental request is made for
-                  it
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       {/* TODO, Full text search comes here */}
 
       {/* <div className="promo-box">

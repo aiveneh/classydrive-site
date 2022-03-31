@@ -43,61 +43,70 @@ export default function About() {
 
                     <div className="GridLex-col-12_sm-12_xs-12">
                       <div className="contact-item">
+                        <p>
+                          <b>CLASSY DRIVE NIGERIA LIMITED</b> is a foremost global choice in automobile rentals and
+                          sales, fleet management and consulting, and private jet hiring services. Driven by excellence
+                          and the passion to serve with a wealth of resources in man and material at our disposal, we
+                          have earned our rightful place among our global community of clients. We continually push the
+                          boundaries of innovations to deliver seamless, first-class services to business and individual
+                          needs through our portfolio of services. People and the environment are at the center of our
+                          values, and we daily commit to their overall good through the businesses we serve and the
+                          services we render.
+                        </p>
                         <img src="/images/car-1.jpg" />
 
+                        <h4>WHO WE ARE ?</h4>
                         <p>
-                          We are offering you the ultimate experience of driving in luxury, elegance &amp; class.
-                          Whether you need to purchase a high-end car or you just need to rent one for a period, may you
-                          have a luxury car in your garage, you can put it on a fleet, and we will pay you every time a
-                          rental request is made for it
+                          We are <b>CLASSY DRIVE NIGERIA LIMITED</b>. We are excellence. Rising to meet the daily
+                          challenges of people and businesses in their vehicular needs, our story begins with what is
+                          truly exploiting innovative ideas in providing structured and top-class solutions to making
+                          rental services in automobiles and private jet hiring, fleet management, and consulting, a
+                          truly satisfying and safe experience for all. With our team of experts drawn from across the
+                          world, we are truly a global community of people committed to a common goal; service for
+                          humanity’s overall good.
                         </p>
 
-                        <p>We guarantee efficient products, and the highest level of safety on our services.</p>
-
+                        <h4>WHAT WE DO</h4>
                         <p>
-                          <b>CAR RENTAL</b> - Need to show up at a meeting in classy? Ride to your wedding in style and
-                          elegance? or you just want to have a feel of driving a luxury car? No matter the occasion, we
-                          have the luxury car that fits. Classy Drive Nigeria car rental services got you sorted. Here
-                          we believe that renting a luxury car should be quick, simple and exciting.
+                          <b>CLASSY DRIVE NIGERIA LIMITED</b> is an integrated service and consultancy company with a
+                          portfolio of professional services, ranging from top-end car rental and private jet hiring to
+                          fleet management and consultancy. We continually deploy our wealth of expert resources to
+                          deliver premium services for our clients’ long-term satisfaction and success.
                         </p>
 
                         <img src="/images/car-2.jpg" />
 
+                        <h4>OUR VALUES</h4>
                         <p>
-                          When it comes to luxury road travel, we put you first. Our luxury car rental service offers a
-                          great way to enjoy intra and inter city travel in luxury. Whether you choose to drive yourself
-                          in one of our luxury cars or prefer to be chauffeured, Classy Drive Nigeria provides you with
-                          matchless safety, luxury, style, and comfort. Our luxury car rental services are crucial to
-                          executives and and loves of style, class and elegance.
+                          At <b>CLASSY DRIVE NIGERIA LIMITED</b>, our values are at the centre of all our operations,
+                          and our General Business Principles, Code of Ethics, and Code of Conduct help every one of us
+                          to act in line with these values.
                         </p>
 
+                        <h4>OUR PORTFOLIO OF SERVICES</h4>
                         <p>
-                          Our products and services are designed to offer luxurious, safe, and a reliable transport
-                          solution to executives and people in need of the comfort, safety and style that comes with
-                          luxury and those who want to have a feel of luxurious travels.
+                          Our portfolio of business operations is carefully structured and tailored to meet the varied
+                          needs of our numerous clients, in ways that are safe, first-rate, satisfactory, and in line
+                          with best global practices. This array of services includes;
+                          <ol>
+                            <li>- Car Rentals</li>
+                            <li>- Car Sales</li>
+                            <li>- Short Car Sales Packages</li>
+                            <li>- Fleet Management and Consulting</li>
+                            <li>- Private Jet Hiring</li>
+                          </ol>
                         </p>
 
+                        <h4>WHY CHOOSE US?</h4>
+                        <p>
+                          We are the industry first choice in rental services, automobile sales, fleet management and
+                          consulting in Nigeria and the West African sub-region. We are proven industry experts. Our
+                          empathy in delivering our clients’ needs through expert-level services stands us out. We are
+                          guided in all our operations by ethical codes that are in line with best global practices. At
+                          the heart of our services are the deployment of first-class innovative ideas and up-to-date
+                          technological tools to better serve our global community of clients.
+                        </p>
                         <img src="/images/car-3.jpg" />
-
-                        <p>
-                          <b>CAR DEALERSHIP</b> – Here at Classy Drive Nigeria, we are on a mission to be the number one
-                          destination for luxury and exotic automotive needs. It doesn’t matter what your need is,
-                          whether SUV, Saloon or Sport cars, new or used, rest assured we will deliver it to you.
-                        </p>
-
-                        <img src="/images/car-4.jpg" />
-
-                        <p>
-                          <b>PREMIUM CAR FLEET</b> – We over you an opportunity to earn a passive income when you enroll
-                          your luxury car in our rental program. Whether you use your exotic car or leave it parked in
-                          your garage, remember your car depreciates with time so why not earn with anyway?
-                        </p>
-                        <p>
-                          With our rental program, you earn an income every time someone registers to use your car.
-                          Don’t worry about the safety of your car, our security architecture ensures that your car is
-                          safe and only gets into the hands of qualified individuals.
-                        </p>
-                        <p>Incase of an accident, we have an insurance cover for your car(s).</p>
                       </div>
                     </div>
 

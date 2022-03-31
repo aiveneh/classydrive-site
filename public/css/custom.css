@@ -148,6 +148,14 @@ input[type='file'] {
   margin-bottom: 40px;
 }
 
+.aboutText{
+  text-align: justify;
+}
+
+.aboutText p{
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 991px) {
   .p-50 {
     padding: 10px;
