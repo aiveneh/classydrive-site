@@ -98,7 +98,7 @@ export default function Footer() {
                 {' '}
                 <br />
                 <span className="block text-white font20 font700 line20 mt-10 mb-5">
-                  <a href={`tel:+${constants.phone}`}>{constants.phone}</a>
+                  <a href={`https://wa.me/${constants.phone}`}>{constants.phone}</a>
                 </span>
                 <a href={`mailto:${constants.email}`}>{constants.email}</a>
               </p>
