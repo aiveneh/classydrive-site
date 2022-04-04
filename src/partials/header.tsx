@@ -27,14 +27,14 @@ export default function Header() {
 
               <div className="col-sm-6 clearfix hidden-xs">
                 <div className="top-header-widget pull-right">
-                  <a href="#">
+                  <a href={`https://wa.me/${constants.phone}`}>
                     <i className="fa fa-comments mr-3"></i> Contact us
                   </a>
                 </div>
                 <div className="top-header-widget pull-right">
                   <i className="fa fa-phone"></i>
-                  call us on:
-                  <a href={`tel:${constants.phone}`}>{constants.phone}</a>
+                  message us on:
+                  <a href={`https://wa.me/${constants.phone}`}>{constants.phone}</a>
                 </div>
               </div>
             </div>

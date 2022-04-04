@@ -1,5 +1,5 @@
 export default {
-  phone: '08066088506‬',
+  phone: '08064835245',
   email: 'support@classydrive.com',
   facebook: 'https://facebook.com/classydriveservices',
   instagram: 'https://instagram.com/classydrive',
