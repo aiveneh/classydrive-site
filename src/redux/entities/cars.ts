@@ -35,7 +35,7 @@ function readEpic(action$) {
   return action$.pipe(
     ofType(action.read.loading),
     switchMap(() => {
-      return api.get$('/cars?approved=true').pipe(
+      return api.get$('/cars/public/get').pipe(
         switchMap(({ response }) => {
           return of(action.readAction(response.data).success);
         }),
@@ -49,7 +49,7 @@ function readOneEpic(action$) {
   return action$.pipe(
     ofType(action.readOne.loading),
     switchMap(({ payload }) => {
-      return api.get$(`/cars/${payload.id}`).pipe(
+      return api.get$(`/cars/detail/${payload.id}`).pipe(
         switchMap(({ response }) => {
           return of(action.readOneAction(response.data).success);
         }),
