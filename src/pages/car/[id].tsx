@@ -192,7 +192,7 @@ export default function CarDetail() {
                           </li>
 
                           <li className="price">
-                            <span className="absolute">Price: </span>
+                            <span className="absolute">Price per day: </span>
                             {formatPrice(car.price)}
                           </li>
                         </ul>
