@@ -90,7 +90,7 @@ export default function Home() {
       <div className="section">
         <div className="container">
           <div className="section-title text-center row p-50">
-            <h3 className="heading mt-0">ClassyDrive Nigeria Limited</h3>
+            <h3 className="heading mt-0">ClassyDrive</h3>
 
             <div className="aboutText">
               <p>
