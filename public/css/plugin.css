@@ -208,7 +208,7 @@
 }
 
 .progress-primary .progress-bar {
-  background: #db0f38;
+  background: gold;
 }
 
 .panel {
@@ -378,7 +378,7 @@
 }
 
 .label-primary {
-  background: #db0f38;
+  background: gold;
 }
 
 /**
@@ -464,19 +464,19 @@
 
 .scrollspy-sidebar .nav > li > a:hover {
   background: none;
-  color: #db0f38;
+  color: gold;
 }
 
 .scrollspy-sidebar .nav > li > a:focus {
   background: none;
-  color: #db0f38;
+  color: gold;
 }
 
 .scrollspy-sidebar .nav > .active > a,
 .scrollspy-sidebar .nav > .active:hover > a,
 .scrollspy-sidebar .nav > .active:focus > a {
   font-weight: 600;
-  color: #db0f38 !important;
+  color: gold !important;
 }
 
 .scrollspy-sidebar .nav .nav {
@@ -507,7 +507,7 @@
 
 .scrollspy-sidebar .nav > .active:after,
 .scrollspy-sidebar .nav > li:hover:after {
-  border: 1px solid #db0f38;
+  border: 1px solid gold;
 }
 
 @media (min-width: 992px) {
@@ -610,7 +610,7 @@ input[type='radio'] + label:hover::before,
 input[type='checkbox'] + label:hover::before,
 input[type='radio']:checked + label:before,
 input[type='checkbox']:checked + label:before {
-  color: #db0f38;
+  color: gold;
 }
 
 /**
@@ -627,7 +627,7 @@ select.form-control.multiple option {
 
 .fancy-select {
   position: relative;
-  color: #db0f38;
+  color: gold;
 }
 
 .fancy-select.disabled .form-control {
@@ -663,12 +663,12 @@ select.form-control.multiple option {
 }
 
 .fancy-select .form-control.open {
-  border-color: #db0f38;
+  border-color: gold;
 }
 
 .fancy-select .form-control.open:after {
   margin-top: -5px;
-  color: #db0f38;
+  color: gold;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -2471,7 +2471,7 @@ body.modal-open,
   line-height: 1.333;
   text-shadow: none;
   padding: 1px 5px;
-  background: #db0f38;
+  background: gold;
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
@@ -2489,7 +2489,7 @@ body.modal-open,
   margin-left: -3px;
   overflow: hidden;
   border: 3px solid transparent;
-  border-top-color: #db0f38;
+  border-top-color: gold;
 }
 
 .irs-grid {
@@ -2533,7 +2533,7 @@ body.modal-open,
 }
 
 #back-to-top a:hover {
-  background-color: #db0f38;
+  background-color: gold;
   color: #fff;
-  border-color: #db0f38;
+  border-color: gold;
 }

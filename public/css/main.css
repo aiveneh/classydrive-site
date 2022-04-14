@@ -197,14 +197,14 @@ table {
 }
 
 body {
-  color: #636363;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased !important;
   font-smoothing: antialiased !important;
-  background-color: #fff;
+  background-color: #212121;
 }
 
 img {
@@ -237,7 +237,7 @@ a:hover {
 
 a {
   font-weight: 400;
-  color: #db0f38;
+  color: gold;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -279,7 +279,7 @@ h5,
 h6 {
   font-family: 'Work Sans', sans-serif;
   padding: 0;
-  color: #000;
+  color: #fff;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -416,7 +416,7 @@ blockquote,
   color: #777;
   font-weight: 300;
   border-radius: 0;
-  border-left: 3px solid #db0f38;
+  border-left: 3px solid gold;
   margin: 25px 0;
 }
 
@@ -1393,7 +1393,7 @@ ul.list-col-3 li {
 .wrapper,
 .container-wrapper {
   position: relative;
-  background: white;
+  background: #212121;
   -webkit-transition: margin 0.3s;
   -o-transition: margin 0.3s;
   transition: margin 0.3s;
@@ -1415,7 +1415,7 @@ section,
 }
 
 .main-wrapper {
-  background: #fff;
+  background: #212121;
 }
 
 .container {
@@ -2276,7 +2276,7 @@ section,
 }
 
 .text-primary {
-  color: #db0f38 !important;
+  color: gold !important;
 }
 
 .text-info {
@@ -2411,7 +2411,7 @@ a.link-alt:hover {
 }
 
 .form-control:focus {
-  border-color: #db0f38;
+  border-color: gold;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -2478,8 +2478,8 @@ a.link-alt:hover {
   left: 0;
   width: 100px;
   height: 4px;
-  border-top: 1px double #db0f38;
-  border-bottom: 1px double #db0f38;
+  border-top: 1px double gold;
+  border-bottom: 1px double gold;
 }
 
 .section-title h3:after {
@@ -2524,8 +2524,8 @@ a.link-alt:hover {
   left: 0;
   width: 100px;
   height: 4px;
-  border-top: 1px double #db0f38;
-  border-bottom: 1px double #db0f38;
+  border-top: 1px double gold;
+  border-bottom: 1px double gold;
 }
 
 .section-title-2 h2 span {
@@ -2584,7 +2584,7 @@ h3.heading,
 h4.heading,
 h5.heading,
 h6.heading {
-  color: #333;
+  color: #fff;
   line-height: 1.2;
   margin-top: 30px;
 }
@@ -2618,8 +2618,8 @@ h6.heading {
  */
 
 .bg-primary {
-  background: #db0f38 !important;
-  color: #fff !important;
+  background: gold !important;
+  color: #212121 !important;
 }
 
 .bg-info {
@@ -2653,7 +2653,7 @@ h6.heading {
 }
 
 .bg-light {
-  background: #f3f3f3 !important;
+  background: #212121 !important;
 }
 
 .bg-light-2 {
@@ -3025,26 +3025,26 @@ h6.heading {
 }
 
 .btn-default {
-  color: #db0f38;
+  color: gold;
   background-color: #c7c7c7;
   border-color: #c7c7c7;
 }
 
 .btn-default:hover {
-  color: #db0f38;
+  color: gold;
   background-color: #d1d1d1;
   border-color: #d1d1d1;
 }
 
 .btn-primary {
-  background: #db0f38;
-  border-color: #db0f38;
-  color: #fff !important;
+  background: gold;
+  border-color: gold;
+  color: #212121 !important;
 }
 
 .btn-primary:hover {
-  background: #db0f38;
-  border-color: #db0f38;
+  background: gold;
+  border-color: gold;
   opacity: 0.7;
 }
 
@@ -3101,13 +3101,13 @@ h6.heading {
 .btn-success.btn-inverse,
 .btn-warning.btn-inverse,
 .btn-danger.btn-inverse {
-  background: #fff;
+  background: #212121;
   border-width: 2px;
 }
 
 .btn-primary.btn-inverse {
-  color: #db0f38 !important;
-  border-color: #db0f38 !important;
+  color: gold !important;
+  border-color: gold !important;
 }
 
 .btn-info.btn-inverse {
@@ -3128,7 +3128,7 @@ h6.heading {
 
 .btn-primary.btn-inverse:hover {
   color: #fff !important;
-  background: #db0f38;
+  background: gold;
 }
 
 .btn-info.btn-inverse:hover {
