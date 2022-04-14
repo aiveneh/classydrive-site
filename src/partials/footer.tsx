@@ -39,7 +39,9 @@ export default function Footer() {
                 </a>
               </div>
 
-              <p className="about-us-footer">Ultimate experience of driving in luxury, elegance &amp; class.</p>
+              <p className="about-us-footer">
+                A foremost global choice in automobile rentals, sales, fleets, consulting and private jet charter.
+              </p>
 
               <div className="social-footer clearfix">
                 <a href={constants.facebook}>

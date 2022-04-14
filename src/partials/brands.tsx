@@ -5,8 +5,7 @@ export default function Brands() {
     <div className="bg-light pt-90 pb-60">
       <div className="container">
         <div className="row">
-          <h2 className="section-title">Brands we accept</h2>
-          <p>* Partners can only upload brands from 2017 above</p>
+          <p>* Partners can only upload brands from 2017 and above</p>
         </div>
       </div>
     </div>

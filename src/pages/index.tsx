@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="section">
+      <div className="">
         <div className="container">
           <div className="section-title text-center row p-50">
             <h3 className="heading mt-0">ClassyDrive</h3>
