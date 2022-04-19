@@ -19,7 +19,7 @@ export default function Home() {
       <div className="slick-hero-slider-wrapper">
         <div className="slider slick-hero-slider slick-slider-center-mode slick-animation slick-inner-dot">
           <div className="slick-item">
-            <div className="image-bg" style={{ backgroundImage: 'url(/images/hero-header/02.jpg)' }}>
+            <div className="image-bg" style={{ backgroundImage: 'url(/images/CDN-2-Benz-web.png)' }}>
               <div className="container">
                 <div className="row">
                   <div className="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
 
           <div className="slick-item">
-            <div className="image-bg" style={{ backgroundImage: 'url(/images/banner.png)' }}>
+            <div className="image-bg" style={{ backgroundImage: 'url(/images/CDN-Banner-web.png)' }}>
               <div className="container">
                 <div className="row">
                   <div className="col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-6">
@@ -103,6 +103,18 @@ export default function Home() {
                 and individual needs through our portfolio of services. People and the environment are at the center of
                 our values, and we daily commit to their overall good through the businesses we serve and the services
                 we render.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center row">
+            <h4>WHAT WE DO</h4>
+            <div className="aboutText">
+              <p>
+                <b>CLASSY DRIVE NIGERIA LIMITED</b> is an integrated service and consultancy company with a portfolio of
+                professional services, ranging from top-end car rental and private jet hiring to fleet management and
+                consultancy. We continually deploy our wealth of expert resources to deliver premium services for our
+                clients’ long-term satisfaction and success.
               </p>
             </div>
           </div>
